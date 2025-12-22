@@ -1,0 +1,44 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-size: 1em;
+  line-height: 1.2;
+  font-family: 'Simple Console', monospace;
+  background: black;
+  color: #ccc;
+}
+
+/* BACKGROUND */
+pre {
+  position: fixed;
+  inset: 0;
+  margin: 0;
+  z-index: 0;
+  font-family: inherit;
+}
+
+/* FRONT LAYER */
+main.front {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 10;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 20px 10px;
+}
+/**/
+/* main.front div::before { */
+/*   content: "│ "; */
+/*   color: #666; */
+/* } */
+/**/
+a {
+  color: #ccc;
+  text-decoration: none;
+}
+
+a:hover {
+  color: white;
+}

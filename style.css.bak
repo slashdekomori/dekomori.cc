@@ -1,0 +1,51 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  background: black;
+  color: #ccc;
+  font-family: 'Simple Console', monospace;
+}
+
+/* background */
+pre {
+  position: fixed;
+  inset: 0;
+  margin: 0;
+  z-index: 0;
+}
+
+/* front layer */
+.front {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 10;
+}
+
+/* terminal-style rows */
+.row {
+  display: grid;
+  grid-template-columns: 1ch auto;
+  gap: 1ch;
+  margin-bottom: 1em;
+}
+
+.label::before {
+  content: "│";
+  color: #666;
+  margin-right: 1ch;
+}
+
+.label {
+  white-space: nowrap;
+}
+
+a {
+  color: #ccc;
+  text-decoration: none;
+}
+
+a:hover {
+  color: white;
+}
+
