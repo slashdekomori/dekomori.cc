@@ -2,7 +2,17 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
+
   <title>dekomori.cc</title>
+
+  <script>
+    const normalTitle = "dekomori";
+    const awayTitle = "(╥﹏╥) hey…";
+
+    document.addEventListener("visibilitychange", () => {
+      document.title = document.hidden ? awayTitle : normalTitle;
+    });
+  </script>
 
   <link rel="stylesheet" href="./style.css">
   <link rel="icon" href="/favicon.ico" type="favicon.ico">
