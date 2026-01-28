@@ -51,10 +51,10 @@ export function main(coord, context, cursor) {
 	const idx = floor(i * density.length)
 	return density[idx]
 }
-
-import { drawInfo } from '/src/modules/drawbox.js'
-export function post(context, cursor, buffer) {
-	drawInfo(context, cursor, buffer, {
-		color : 'white', backgroundColor : 'royalblue', shadowStyle : 'gray'
-	})
-}
+//
+// import { drawInfo } from '/src/modules/drawbox.js'
+// export function post(context, cursor, buffer) {
+// 	drawInfo(context, cursor, buffer, {
+// 		color : 'white', backgroundColor : 'royalblue', shadowStyle : 'gray'
+// 	})
+// }
