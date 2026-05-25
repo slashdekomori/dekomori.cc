@@ -1,4 +1,3 @@
-# macOS
-.DS_Store
-.AppleDouble
-.LSOverride
+node_modules
+package-lock.json
+package.json
