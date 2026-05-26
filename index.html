@@ -23,10 +23,10 @@
   <!-- FRONT UI -->
   <main class="front">
     <div class="hub">
-      <div class="cmdline"><span class="prompt">[dekomori@cc]</span> <span class="typed" data-cmd="cat about"></span></div>
+      <div class="cmdline"><span class="prompt">[dekomori@cc]</span> cat about</div>
       <h1 class="name">slashdekomori</h1>
       <p class="tagline">developer &amp; artist</p>
-      <div class="cmdline cmdline-second"><span class="prompt">[dekomori@cc]</span> <span class="typed" data-cmd="ls links/"></span></div>
+      <div class="cmdline cmdline-second"><span class="prompt">[dekomori@cc]</span> ls links/</div>
       <nav class="links">
         <a href="https://github.com/slashdekomori" target="_blank" rel="noopener noreferrer">github</a>
         <a href="https://www.youtube.com/@slashdekomori/shorts" target="_blank" rel="noopener noreferrer">youtube</a>
@@ -47,21 +47,7 @@
     }).catch(e => console.error(e))
   </script>
 
-  <script>
-    function typeIn(el, text, speed) {
-      let i = 0
-      function tick() {
-        if (i < text.length) {
-          el.textContent += text[i++]
-          setTimeout(tick, speed)
-        }
-      }
-      tick()
-    }
 
-    setTimeout(() => typeIn(document.querySelectorAll('.typed')[0], 'cat about', 40), 100)
-    setTimeout(() => typeIn(document.querySelectorAll('.typed')[1], 'ls links/', 40), 1400)
-  </script>
 
 </body>
 </html>
