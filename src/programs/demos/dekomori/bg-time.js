@@ -1,0 +1,10 @@
+const pattern = ' .+dekomori+. '
+
+export function background(coord, context, cursor, buffer) {
+  const t = context.time * 0.0001
+  const x = coord.x
+  const y = coord.y
+  const o = Math.sin(y * Math.sin(t) * 0.2 + x * 0.04 + t) * 20
+  const i = Math.round(Math.abs(x + y + o)) % pattern.length
+  return { char: pattern[i] }
+}
